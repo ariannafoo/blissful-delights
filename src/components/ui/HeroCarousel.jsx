@@ -84,7 +84,7 @@ export default function HeroCarousel() {
                             </motion.p>
                         </AnimatePresence>
 
-                        {/*Button section*/}
+                        {/*Button section - TODO - update button action*/}
                         <div className="mt-8 flex gap-4">
                             {/*Order now button*/}
                             <button className="rounded-xl bg-[#d84a5b] px-6 py-3 font-semibold text-white shadow-sm hover:opacity-95">
