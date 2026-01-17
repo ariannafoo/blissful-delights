@@ -1,3 +1,5 @@
+import {getImage} from "../utils/images.js";
+
 export const slides = [
     {
         tag: "✨Handcrafted with Love",
@@ -16,7 +18,6 @@ export const slides = [
         titleBottom: "and Blooms",
         subText: "Limited-time boxes made for anniversaries, birthdays, and surprise gifts.",
         price: "$29.99",
-        image:
-            "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1400&q=80",
+        image: getImage("hero-strawberries.jpg"),
     },
 ];
