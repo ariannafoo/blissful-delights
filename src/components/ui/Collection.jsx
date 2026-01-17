@@ -1,3 +1,6 @@
+import { products } from "../../data/products.js"
+import ProductCard from "./ProductCard.jsx";
+
 function Collection() {
     return (
         <section id="collection" className="bg-[#fbf7f4] py-20">
@@ -21,9 +24,11 @@ function Collection() {
                     coating every time.
                 </p>
 
-                {/*Product Cards - TODO: Add product cards*/}
-                <div className="mt-12">
-                    Cards coming next...
+                {/*Product Cards - product.id because React needs a stable way to tell items apart*/}
+                <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                    {products.map((product) => (
+                        <ProductCard key={product.id} product={product} />
+                    ))}
                 </div>
 
             </div>

@@ -1,9 +1,9 @@
 // import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
 import HeroCarousel from "./components/ui/HeroCarousel.jsx";
 import NavBar from "./components/NavBar.jsx";
+import Collection from "./components/ui/Collection.jsx";
 
 function App() {
 
@@ -11,6 +11,7 @@ function App() {
       <div>
         <NavBar></NavBar>
         <HeroCarousel></HeroCarousel>
+          <Collection></Collection>
       </div>
   )
 }
