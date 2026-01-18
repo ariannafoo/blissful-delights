@@ -1,9 +1,11 @@
+import { Heart, ShoppingBag } from 'lucide-react';
+
 function ProductCard({ product }) {
     return (
         <article
             className="group overflow-hidden rounded-3xl bg-white
             shadow-[0_18px_50px_-35px_rgba(0,0,0,0.35)]
-            transition-transform duration-300 ease-out
+            transition-all duration-500 ease-out
             hover:-translate-y-2"
         >
 
@@ -15,10 +17,10 @@ function ProductCard({ product }) {
                     {product.tag}
                 </span>
 
-                {/*Heart like -- TOOD*/}
-                <button className="absolute right-4 top-4 z-10 grid h-9 w-9 place-items-center round-full bg-white/80
-                text-[#3b2523] shadow transition hover:bg-white">
-                    &hearts;
+                {/*Heart like - TODO: maybe remove*/}
+                <button className="absolute right-4 top-4 z-10 grid h-9 w-9 place-items-center rounded-full bg-white/80
+                text-[#5c3723] shadow transition hover:bg-[#d84a5b]">
+                    <Heart size={18} className="text-[#]"/>
                 </button>
 
                 {/*Product image*/}
@@ -30,25 +32,21 @@ function ProductCard({ product }) {
             {/*Card Content*/}
             <div className="p-6">
                 {/*Product title*/}
-                <h3 className="font-serif text-xl text=[#3b2523]">
+                <h3 className="font-serif text-xl text-[#5c3723] text-center">
                     {product.name}
                 </h3>
 
                 {/*Product description*/}
-                <p className="mt-2 text-sm text-[#6a4b47] line-clamp-2">
+                <p className="mt-2 text-sm text-[#5c3723] line-clamp-2">
                     {product.desc}
                 </p>
 
                 {/*Card Price Area*/}
-                <div className="mt-5 flex items-center justify-between">
-                    <span className="text-2xl font-bold text-[#3b2523]">
-                        {product.price}
+                <div className="mt-5 flex items-center justify-center">
+                    <span className="font-serif text-2xl font-bold text-[#5c3723]">
+                        ${product.price}
                     </span>
 
-                    <button className="rounded-xl bg-[#3b2523] px-4 py-2 text-sm font-semibold text-white
-                    transition hover:opacity-95">
-                        🛒 Add to Cart
-                    </button>
                 </div>
             </div>
         </article>

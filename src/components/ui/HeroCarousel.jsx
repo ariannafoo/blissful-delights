@@ -19,12 +19,12 @@ export default function HeroCarousel() {
     return (
         <section className="relative overflow-hidden bg-[#fff6f2]">
             {/* soft background blobs */}
-            <div className="pointer-events-none absolute inset-0">
-                <div className="absolute -top-24 -left-24 h-80 w-80 rounded-full bg-rose-200/40 blur-3xl" />
-                <div className="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-amber-200/30 blur-3xl" />
+            <div className="pointer-events-none absolute inset-0 z-0">
+                <div className="absolute -top-24 -left-24 h-80 w-80 rounded-full bg-[#f6e8e8] blur-3xl" />
+                <div className="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-[#f5e7df] blur-3xl" />
             </div>
 
-            <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
+            <div className="relative mx-auto max-w-6xl px-6 py-16 md:py-20 z-10">
                 <div className="grid items-center gap-10 md:grid-cols-2">
                     {/* LEFT: text */}
                     <div>
@@ -41,7 +41,7 @@ export default function HeroCarousel() {
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -10 }}
                                 transition={{ duration: 0.35 }}
-                                className="mt-6 font-serif text-5xl leading-[1.02] text-[#3b2523] md:text-6xl"
+                                className="mt-6 font-serif text-5xl leading-[1.02] text-[#5c3723] md:text-6xl"
                             >
                                 {slide.titleTop}{" "}
                                 <span className="text-[#d84a5b]">{slide.titleAccent}</span>{" "}
@@ -66,11 +66,11 @@ export default function HeroCarousel() {
                         {/*Button section - TODO - update button action*/}
                         <div className="mt-8 flex gap-4">
                             {/*Order now button*/}
-                            <button className="rounded-xl bg-[#d84a5b] px-6 py-3 font-semibold text-white shadow-sm hover:opacity-95">
+                            <button className="rounded-xl bg-[#d84a5b] px-6 py-3 cursor-pointer font-semibold text-white shadow-sm hover:opacity-90">
                                 Order Now
                             </button>
                             {/*View collection button*/}
-                            <button className="rounded-xl border border-[#3b2523]/30 bg-white/40 px-6 py-3 font-semibold text-[#3b2523] hover:bg-white/60">
+                            <button className="rounded-xl border bg-[#5c3723] px-6 py-3 cursor-pointer font-semibold text-white hover:opacity-90">
                                 View Collection
                             </button>
                         </div>

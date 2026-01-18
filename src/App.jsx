@@ -3,7 +3,8 @@
 import './App.css'
 import HeroCarousel from "./components/ui/HeroCarousel.jsx";
 import NavBar from "./components/NavBar.jsx";
-import Collection from "./components/ui/Collection.jsx";
+import Collection from "./components/Collection.jsx";
+import GalleryPreview from "./components/GalleryPreview.jsx";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <NavBar></NavBar>
         <HeroCarousel></HeroCarousel>
           <Collection></Collection>
+          <GalleryPreview></GalleryPreview>
       </div>
   )
 }

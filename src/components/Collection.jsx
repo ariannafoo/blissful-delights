@@ -1,5 +1,5 @@
-import { products } from "../../data/products.js"
-import ProductCard from "./ProductCard.jsx";
+import { products } from "../data/products.js"
+import ProductCard from "./ui/ProductCard.jsx";
 
 function Collection() {
     return (
@@ -14,12 +14,12 @@ function Collection() {
                 </div>
 
                 {/*Heading*/}
-                <h2 className="mt-6 text-center font-serif text-5xl text-[#3b2523]">
+                <h2 className="mt-6 text-center font-serif text-5xl text-[#5c3723]">
                     Handcrafted Favourites
                 </h2>
 
                 {/*Subtitle*/}
-                <p className="mx-auto mt-4 max-w-2xl text-center text-[#6a4b47]">
+                <p className="mx-auto mt-4 max-w-2xl text-center text-[#5c3723]">
                     Each strawberry is carefully selected and dipped by hand, ensuring the perfect chocolate
                     coating every time.
                 </p>

@@ -1,3 +1,5 @@
+import {ShoppingBag} from "lucide-react";
+
 function NavBar() {
     return (
         // Nav bar - make sticky
@@ -18,13 +20,14 @@ function NavBar() {
             }>
                 <li>Home</li>
                 <li>Shop</li>
+                <li>Gallery</li>
                 <li>About</li>
                 <li>Contact</li>
             </ul>
 
             {/*Cart*/}
             <div className="relative cursor-pointer">
-                <span className="text-xl">🛒</span>
+                <ShoppingBag className="text-[#5c3723]"/>
                 <span className="absolute -top-2 -right-2 bg-[#d84a5b] text-white text-xs px-1.5 py-0.5 rounded-full">
                   0
                 </span>
