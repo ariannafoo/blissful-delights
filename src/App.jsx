@@ -5,6 +5,7 @@ import HeroCarousel from "./components/ui/HeroCarousel.jsx";
 import NavBar from "./components/NavBar.jsx";
 import Collection from "./components/Collection.jsx";
 import GalleryPreview from "./components/GalleryPreview.jsx";
+import ReviewsSection from "./components/ui/Reviews.tsx";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <HeroCarousel></HeroCarousel>
           <Collection></Collection>
           <GalleryPreview></GalleryPreview>
+          <ReviewsSection></ReviewsSection>
       </div>
   )
 }
