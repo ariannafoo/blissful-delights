@@ -5,7 +5,7 @@ export default function GalleryPreview() {
     const [active, setActive] = useState(null);
 
     return (
-        <section id="work" className="bg-[#fbf7f4] py-16">
+        <section id="work" className="bg-[#fbf7f4] py-20">
             <div className="mx-auto max-w-6xl px-6">
                 {/*Header*/}
                 <div className="text-center">
@@ -34,7 +34,8 @@ export default function GalleryPreview() {
                         <button
                             key={img.id} type="button" onClick={() => setActive(img)}
                             // TODO: make transparent
-                            className="group overflow-hidden cursor-pointer rounded-3xl bg-white shadow-[0_18px_50px_-35px_rgba(0,0,0,0.35)]"
+                            className="group overflow-hidden cursor-pointer rounded-3xl bg-white
+                            shadow-[0_18px_50px_-35px_rgba(0,0,0,0.35)]"
                         >
                             {/*Image*/}
                             <div className="relative h-64 overflow-hidden">
@@ -55,8 +56,8 @@ export default function GalleryPreview() {
 
                 {/*Link/CTA to Gallery Page TODO:Edit gallery link*/}
                 <div className="mt-10 text-center">
-                    <a href="/gallery" className="px-6 py-3 cursor-pointer inline-flex items-center justify-center rounded-xl bg-[#5c3723] px-6
-                    text-sm font-semibold text-white hover:opacity-95">
+                    <a href="/gallery" className="px-6 py-3 cursor-pointer inline-flex items-center justify-center
+                    rounded-xl bg-[#5c3723] px-6 text-sm font-semibold text-white hover:opacity-95">
                         View Full Gallery
                     </a>
                 </div>

@@ -29,7 +29,8 @@ export default function HeroCarousel() {
                     {/* LEFT: text */}
                     <div>
                         {/*Tag*/}
-                        <div className="inline-flex items-center gap-2 rounded-full bg-rose-100 px-4 py-2 text-sm text-rose-700">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-rose-100 px-4 py-2 text-sm
+                        text-rose-700">
                             {slide.tag}
                         </div>
 
@@ -66,11 +67,13 @@ export default function HeroCarousel() {
                         {/*Button section - TODO - update button action*/}
                         <div className="mt-8 flex gap-4">
                             {/*Order now button*/}
-                            <button className="rounded-xl bg-[#d84a5b] px-6 py-3 cursor-pointer font-semibold text-white shadow-sm hover:opacity-90">
+                            <button className="rounded-xl bg-[#d84a5b] px-6 py-3 cursor-pointer font-semibold
+                            text-white shadow-sm transition-transform duration-300 ease-out hover:scale-105">
                                 Order Now
                             </button>
                             {/*View collection button*/}
-                            <button className="rounded-xl border bg-[#5c3723] px-6 py-3 cursor-pointer font-semibold text-white hover:opacity-90">
+                            <button className="rounded-xl border bg-[#5c3723] px-6 py-3 cursor-pointer font-semibold
+                            text-white hover:opacity-90">
                                 View Collection
                             </button>
                         </div>

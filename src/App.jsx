@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar.jsx";
 import Collection from "./components/Collection.jsx";
 import GalleryPreview from "./components/GalleryPreview.jsx";
 import ReviewsSection from "./components/ui/Reviews.tsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Collection></Collection>
           <GalleryPreview></GalleryPreview>
           <ReviewsSection></ReviewsSection>
+          <Footer></Footer>
       </div>
   )
 }
