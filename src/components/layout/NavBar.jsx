@@ -1,4 +1,5 @@
 import {ShoppingBag} from "lucide-react";
+import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
@@ -18,11 +19,19 @@ function NavBar() {
                 ' [&>li]:transition-colors\n' +
                 '[&>li:hover]:text-[#d84a5b]'
             }>
-                <li>Home</li>
-                <li>Shop</li>
-                <li>Gallery</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/shop">Shop</Link></li>
+                <li><Link to="/gallery">Gallery</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li>
+                    <Link
+                        to="/contact"
+                        className="text-red-500"
+                        onClick={() => console.log("clicked")}
+                    >
+                        Contact
+                    </Link>
+                </li>
             </ul>
 
             {/*Cart*/}

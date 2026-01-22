@@ -1,5 +1,5 @@
-import { products } from "../data/products.js"
-import ProductCard from "./ui/ProductCard.jsx";
+import { products } from "../../data/products.js"
+import ProductCard from "./ProductCard.jsx";
 
 function Collection() {
     return (

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { galleryPreview } from "../data/gallery.js";
+import { galleryPreview } from "../../data/gallery.js";
 
 export default function GalleryPreview() {
     const [active, setActive] = useState(null);

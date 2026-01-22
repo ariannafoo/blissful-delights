@@ -37,7 +37,7 @@ export default function Footer() {
             {/*Footer Foot*/}
             <div className="bg-[#5c3723]">
                 <div className="mx-auto max-w-7xl px-6 py-14">
-                    <div className="grid gap-12 md:grid-cols-3">
+                    <div className="grid gap-12 md:grid-cols-2">
                         {/*Beginning*/}
                         <div>
                             {/*Logo*/}
@@ -64,37 +64,39 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        {/*Middle - quick links*/}
-                        <div className="text-white">
-                            <h3 className="font-serif font-semibold">Quick Links</h3>
-                            <ul className="text-sm mt-4 space-y-2 text-[#e7d8cf]">
-                                <li><a>Home</a></li>
-                                <li><a>Shop</a></li>
-                                <li><a>About Us</a></li>
-                                <li><a>FAQ</a></li>
-                            </ul>
-                        </div>
+                        <div className="grid grid-cols-2 gap-12">
+                            {/*Middle - quick links*/}
+                            <div className="text-white">
+                                <h3 className="font-serif font-semibold">Quick Links</h3>
+                                <ul className="text-sm mt-4 space-y-2 text-[#e7d8cf]">
+                                    <li><a>Home</a></li>
+                                    <li><a>Shop</a></li>
+                                    <li><a>About Us</a></li>
+                                    <li><a>FAQ</a></li>
+                                </ul>
+                            </div>
 
-                        {/*End - Contact*/}
-                        <div>
-                            <h3 className="font-serif font-semibold text-white">Contact Us</h3>
+                            {/*End - Contact*/}
+                            <div>
+                                <h3 className="font-serif font-semibold text-white">Contact Us</h3>
 
-                            <ul className="mt-4 space-y-4 text-sm text-[#e7d8cf]">
-                                <li className="flex items-center gap-3">
-                                    <Mail size={18} className="text-[#d84a5b]" />
-                                    <span>hello@berrybliss.com</span>
-                                </li>
+                                <ul className="mt-4 space-y-4 text-sm text-[#e7d8cf]">
+                                    <li className="flex items-center gap-3">
+                                        <Mail size={18} className="text-[#d84a5b]" />
+                                        <span>hello@berrybliss.com</span>
+                                    </li>
 
-                                <li className="flex items-center gap-3">
-                                    <Phone size={18} className="text-[#d84a5b]" />
-                                    <span>(555) 123-4567</span>
-                                </li>
+                                    <li className="flex items-center gap-3">
+                                        <Phone size={18} className="text-[#d84a5b]" />
+                                        <span>(555) 123-4567</span>
+                                    </li>
 
-                                <li className="flex items-center gap-3">
-                                    <MapPin size={18} className="text-[#d84a5b]" />
-                                    <span>Los Angeles, CA</span>
-                                </li>
-                            </ul>
+                                    <li className="flex items-center gap-3">
+                                        <MapPin size={18} className="text-[#d84a5b]" />
+                                        <span>Los Angeles, CA</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -114,8 +116,6 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </footer>
     );

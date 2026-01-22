@@ -1,8 +1,8 @@
-const images = import.meta.glob("../assets/*.{jpg,jpeg,png,webp}", {
+const images = import.meta.glob("/src/assets/*.{jpg,jpeg,png,webp}", {
     eager: true,
     import: "default",
 });
 
 export function getImage(fileName) {
-    return images[`../assets/${fileName}`];
+    return images[`/src/assets/${fileName}`];
 }

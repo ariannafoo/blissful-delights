@@ -1,25 +1,28 @@
 // import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import HeroCarousel from "./components/ui/HeroCarousel.jsx";
-import NavBar from "./components/NavBar.jsx";
-import Collection from "./components/Collection.jsx";
-import GalleryPreview from "./components/GalleryPreview.jsx";
-import ReviewsSection from "./components/ui/Reviews.tsx";
-import Footer from "./components/Footer.jsx";
+import { Routes, Route } from "react-router-dom";
+
+import NavBar from "./components/layout/NavBar.jsx";
+import Footer from "./components/layout/Footer.jsx";
+
+import Home from "./pages/Home.jsx"
+import Contact from "./pages/Contact.jsx"
 
 function App() {
 
   return (
       <div>
-        <NavBar></NavBar>
-        <HeroCarousel></HeroCarousel>
-          <Collection></Collection>
-          <GalleryPreview></GalleryPreview>
-          <ReviewsSection></ReviewsSection>
+          <NavBar></NavBar>
+
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/contact" element={<Contact />}/>
+          </Routes>
+
           <Footer></Footer>
       </div>
   )
 }
 
-export default App
+export default App;
